@@ -13,7 +13,7 @@ import (
 func main() {
 	filename := os.Args[1]
 
-	contents, err := ioutil.ReadFile(filename)
+	contents, err := os.ReadFile(filename)
 	if err != nil {
 		fmt.Println("There was an error opening the file:", err)
 		return
